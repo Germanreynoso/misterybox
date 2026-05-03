@@ -20,7 +20,7 @@ export function MysteryBox() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-4"
+          className="text-center mb-20"
         >
           <span className="text-primary text-sm tracking-[0.3em] uppercase">
             La Recompensa

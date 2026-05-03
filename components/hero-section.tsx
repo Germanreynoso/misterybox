@@ -5,6 +5,7 @@ import { WaxSeal } from './wax-seal'
 import { Button } from '@/components/ui/button'
 import { ChevronDown } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export function HeroSection() {
   return (
@@ -43,7 +44,13 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="flex justify-center mb-12"
         >
-          <WaxSeal size={100} />
+          <Image 
+            src="/logo.png" 
+            alt="Entrega Clasificada Logo" 
+            width={200} 
+            height={200} 
+            className="rounded-full shadow-[0_0_50px_rgba(192,57,43,0.2)]"
+          />
         </motion.div>
 
         <motion.p

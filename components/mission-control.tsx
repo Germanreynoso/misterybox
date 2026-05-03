@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Lock, ShieldAlert, Terminal, ArrowRight, Timer } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import Image from 'next/image'
 
 export function MissionControl() {
   const [status, setStatus] = useState<'locked' | 'accessing' | 'granted'>('locked')
@@ -55,8 +56,14 @@ export function MissionControl() {
               <div className="absolute inset-x-0 top-0 h-px bg-primary/30 animate-scan" />
               
               <div className="flex flex-col items-center text-center mb-8">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 border border-primary/20">
-                  <Lock className={`w-8 h-8 ${error ? 'text-destructive' : 'text-primary'}`} />
+                <div className="mb-6">
+                  <Image 
+                    src="/logo.png" 
+                    alt="Logo" 
+                    width={80} 
+                    height={80} 
+                    className="rounded-full border border-primary/20 shadow-[0_0_20px_rgba(192,57,43,0.2)]"
+                  />
                 </div>
                 <h1 className="text-xl tracking-widest uppercase mb-2">Acceso Restringido</h1>
                 <p className="text-muted-foreground text-xs">INGRESE CÓDIGO DE AUTORIZACIÓN</p>

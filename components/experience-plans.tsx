@@ -8,39 +8,36 @@ const plans = [
   {
     name: 'Básico',
     price: '$15.000 – $30.000',
-    description: 'Tu primera misión. Ideal para curiosos.',
+    description: 'Perfecto para un detalle original y sorprendente.',
     features: [
-      'Sobre sellado con misión personalizada',
-      '3-5 pistas para resolver',
+      'Objetos curados de alta calidad',
+      'Temática estándar seleccionada',
+      'Misión de búsqueda en zona céntrica',
       'Caja de misterio nivel I',
-      'Duración: 2-3 horas',
     ],
     featured: false,
   },
   {
     name: 'Intermedio',
     price: '$40.000 – $80.000',
-    description: 'Para los que buscan más adrenalina.',
+    description: 'Más valor, mejores artículos y mayor misterio.',
     features: [
       'Todo lo del plan Básico',
-      '6-10 pistas con mayor complejidad',
-      'Ubicaciones exclusivas',
+      'Artículos de tecnología o colección',
+      'Misión de dificultad media con más pistas',
       'Caja de misterio nivel II',
-      'Duración: 4-6 horas',
     ],
     featured: true,
   },
   {
     name: 'Premium',
     price: '$100.000+',
-    description: 'La experiencia definitiva. Sin límites.',
+    description: 'La máxima exclusividad y el mayor valor garantizado.',
     features: [
-      'Misión completamente personalizada',
-      'Actores en vivo',
-      'Locaciones VIP',
-      'Caja de misterio nivel III',
-      'Duración: día completo',
-      'Sorpresas adicionales',
+      'Objetos de lujo y ediciones limitadas',
+      'Misión VIP completamente personalizada',
+      'Actores en vivo opcionales',
+      'Caja de misterio nivel III (Edición Especial)',
     ],
     featured: false,
   },
@@ -61,10 +58,10 @@ export function ExperiencePlans() {
             Niveles de acceso
           </span>
           <h2 className="font-serif text-3xl md:text-5xl text-foreground mb-4">
-            Elegí tu experiencia
+            Niveles de Contenido
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Cada nivel incluye una caja de misterio diferente. El contenido siempre es secreto.
+            Seleccioná el nivel de tu caja. El contenido es curado minuciosamente para garantizar una sorpresa de alta calidad en cada entrega.
           </p>
         </motion.div>
 
